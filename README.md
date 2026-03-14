@@ -102,8 +102,7 @@ http://localhost:8501
 
 ## 📂 Project Structure
 
-```
-deepfake-detector
+hybrid-deepfake-detector/
 │
 ├── app.py
 ├── hybrid_deepfake_detector.py
@@ -113,7 +112,9 @@ deepfake-detector
 ├── evaluate_model.py
 │
 ├── models/
-│   └── resnet18_ffpp.pth
+│   ├── resnet18_ffpp.pth
+│   ├── improved_model.pth
+│   └── final_trained_model.pth
 │
 ├── samples/
 │   └── fake.mp4
@@ -121,7 +122,6 @@ deepfake-detector
 ├── requirements.txt
 ├── training_history.json
 │
-├── README.md
 ├── PROJECT_REPORT.md
 ├── TRAINING_GUIDE.md
 ├── UI_README.md
