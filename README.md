@@ -6,39 +6,39 @@ This system combines **deep learning, physiological signals, and artifact detect
 
 ---
 
-## 🚀 Features
+# 🚀 Features
 
 * 🎥 **Video Deepfake Detection**
 * 🧠 **CNN-based Visual Artifact Detection (ResNet18)**
 * 💓 **rPPG Heart Signal Analysis**
 * 🔊 **Noise & Compression Artifact Detection**
-* 📊 **Interactive Visual Analytics (Plotly)**
-* 📄 **Automated PDF Report Generation**
+* 📊 **Interactive Visual Analytics**
+* 📄 **Automated Report Generation**
 * 🖥 **Streamlit Web Interface**
 * 📈 **Model Training & Evaluation Pipeline**
 
 ---
 
-## 🧠 Detection Method
+# 🧠 Detection Method
 
-The system uses a **Hybrid Detection Approach** combining three techniques:
+The system uses a **Hybrid Detection Approach** combining multiple techniques.
 
-### 1️⃣ CNN Visual Analysis
+## 1️⃣ CNN Visual Analysis
 
 * ResNet18 model trained on deepfake datasets
-* Detects visual artifacts introduced during face manipulation
+* Detects visual artifacts introduced during face manipulation.
 
-### 2️⃣ rPPG Physiological Signal Detection
+## 2️⃣ rPPG Physiological Signal Detection
 
 * Extracts subtle **heartbeat signals from facial color changes**
-* Fake videos often fail to replicate natural biological signals
+* Fake videos often fail to replicate natural biological signals.
 
-### 3️⃣ Temporal Noise / Artifact Detection
+## 3️⃣ Temporal Noise / Artifact Detection
 
 * Analyzes **frame-level noise patterns**
-* Detects inconsistencies caused by deepfake generation
+* Detects inconsistencies caused by deepfake generation.
 
-### 🔗 Hybrid Fusion
+## 🔗 Hybrid Fusion
 
 Final deepfake score is computed using weighted fusion:
 
@@ -48,7 +48,7 @@ Final Score = (CNN × 0.6) + (rPPG × 0.3) + (Noise × 0.1)
 
 ---
 
-## 🏗 System Architecture
+# 🏗 System Architecture
 
 ```
 Video Input
@@ -74,17 +74,17 @@ Face Detection (MediaPipe)
 
 ---
 
-## 🖥 Web Interface
+# 🖥 Web Interface
 
 The project includes a **Streamlit-based web application**.
 
-### Features
+## Features
 
 * Upload video files
-* Real-time detection
+* Real-time deepfake detection
 * Confidence visualization
 * Detailed metrics dashboard
-* Downloadable PDF report
+* Downloadable analysis report
 
 Run the UI:
 
@@ -100,9 +100,10 @@ http://localhost:8501
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
 
-hybrid-deepfake-detector/
+```
+hybrid-deepfake-detector
 │
 ├── app.py
 ├── hybrid_deepfake_detector.py
@@ -129,13 +130,13 @@ hybrid-deepfake-detector/
 
 ---
 
-## ⚙️ Installation
+# ⚙️ Installation
 
 Clone the repository:
 
 ```bash
 git clone https://github.com/iconic2409/hybrid-deepfake-detector.git
-cd deepfake-detector
+cd hybrid-deepfake-detector
 ```
 
 Install dependencies:
@@ -152,7 +153,7 @@ streamlit run app.py
 
 ---
 
-## 🏋️ Model Training
+# 🏋️ Model Training
 
 Prepare dataset:
 
@@ -177,7 +178,7 @@ python train_model.py --architecture resnet50 --epochs 50
 
 ---
 
-## 📊 Model Evaluation
+# 📊 Model Evaluation
 
 Evaluate trained model:
 
@@ -187,18 +188,18 @@ python evaluate_model.py \
 --data_dir data/val
 ```
 
-Metrics generated:
+Evaluation metrics include:
 
 * Accuracy
 * Precision
 * Recall
-* F1-score
+* F1 Score
 * ROC-AUC
 * Confusion Matrix
 
 ---
 
-## 📈 Example Results
+# 📈 Example Results
 
 | Metric    | Score |
 | --------- | ----- |
@@ -211,7 +212,7 @@ Metrics generated:
 
 ---
 
-## 🧰 Technologies Used
+# 🧰 Technologies Used
 
 * **Python**
 * **PyTorch**
@@ -221,11 +222,10 @@ Metrics generated:
 * **Plotly**
 * **NumPy / SciPy**
 * **Scikit-learn**
-* **ReportLab**
 
 ---
 
-## ⚠️ Limitations
+# ⚠️ Limitations
 
 * Works best when **faces are clearly visible**
 * rPPG may fail with **low-quality videos**
@@ -233,30 +233,29 @@ Metrics generated:
 
 ---
 
-## 🔮 Future Improvements
+# 🔮 Future Improvements
 
 * Vision Transformer based detection
 * Multi-face detection support
 * Lip-sync detection using audio analysis
-* Ensemble models for higher accuracy
+* Ensemble deep learning models
 
 ---
 
-## 📜 License
+# 📜 License
 
 This project is developed for **educational and research purposes**.
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
 **Ankit Singh**
-
 Computer Science Student
 AI / Machine Learning Projects
 
 ---
 
-## ⭐ Support
+# ⭐ Support
 
 If you found this project helpful, consider giving it a **⭐ on GitHub**.
